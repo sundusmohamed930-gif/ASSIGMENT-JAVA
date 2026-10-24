@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let guess=Number(prompt("guess number:"))
+        let attempts=1;
+
+        while(guess!==15 && attempts <5){
+            if(guess>15){
+                console.log('too high')
+            }else{
+                console.log("too low")
+            }
+            guess=Number(prompt("guess agin:"));
+            attempts++;
+        }
+        if(guess===15){
+            console.log("congration ,you guessed correct number:${guess}");
+
+        }else{
+
+            console.log("game over, the correct number was 15");
+        }
+   </script> 
+</body>
+</html>
